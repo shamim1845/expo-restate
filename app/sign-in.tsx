@@ -32,14 +32,15 @@ const SignIn = () => {
   };
   return (
     <SafeAreaView className="bg-white h-full">
-      <ScrollView contentContainerClassName="h-full">
-        <View className="flex items-center">
-          <Image
-            source={images.onboarding}
-            className="w-full h-4/6"
-            resizeMode="contain"
-          />
-        </View>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentContainerClassName="min-h-screen-safe"
+      >
+        <Image
+          source={images.onboarding}
+          className="w-full h-4/6"
+          resizeMode="contain"
+        />
         <View className="px-10">
           <Text className="text-base text-center uppercase font-rubik text-black-200">
             Welcome to ReState
